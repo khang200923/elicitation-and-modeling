@@ -46,7 +46,7 @@ You can run the demonstration notebook to see how the elicitation and modeling f
     jupyter notebook
     ```
 
-2. Open and run [[demonstration.ipynb]].
+2. Open and run demonstration.ipynb.
 
 ## License
 
