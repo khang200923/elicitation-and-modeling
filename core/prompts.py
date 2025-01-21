@@ -58,7 +58,7 @@ When forecasting, do not treat 0.5% (1:199 odds) and 5% (1:19) as similarly “s
 Only output a single number between 0 and 1 to represent your expected probability.
 """
 
-def update(question: str, answer: str, extraction: str, model: str) -> str:
+def update(question: str, answer: str, extract: str, model: str) -> str:
     return f"""
 You are an expert Bayesian specializing in updating a predictive model based on new information.
 You have a predictive model which contains a list of predictions with their corresponding probabilities:
@@ -66,7 +66,7 @@ You have a predictive model which contains a list of predictions with their corr
 You have asked the subject a question, which is: {question}
 The subject has provided an answer, which is: {answer}
 You have compared the differences between your expected answer and the actual answer, which is:
-```{extraction}```
+```{extract}```
 You want to update the model based on the new information provided by the subject.
 
 Write down your likelihood ratios of the predictions in the model after incorporating the new information.

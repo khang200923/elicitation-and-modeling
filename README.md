@@ -4,14 +4,12 @@ This project is designed to elicit information from users and update a predictiv
 
 ## Project Structure
 
-- `elicitation.py`: Contains functions to elicit information from users.
-- `modeling.py`: Defines the `Model` class and methods to manipulate and update the model.
-- `prompts.py`: Contains prompt templates for different stages of the elicitation process.
-- `utils.py`: Utility functions for interacting with the OpenAI API.
-- `demonstration.ipynb`: Jupyter Notebook demonstrating the usage of the elicitation and modeling functions.
-- `.env`: Environment file for storing API keys and other configurations.
-- `.gitattributes`: Git attributes configuration.
-- `.gitignore`: Git ignore file to exclude unnecessary files from version control.
+- `core/elicitation.py`: Contains functions to elicit information from users.
+- `core/modeling.py`: Defines the `Model` class and methods to manipulate and update the model.
+- `core/prompts.py`: Contains prompt templates for different stages of the elicitation process.
+- `core/utils.py`: Utility functions for interacting with the OpenAI API.
+- `core/demonstration.ipynb`: Jupyter Notebook demonstrating the usage of the elicitation and modeling functions.
+- `core/.env`: Environment file for storing API keys and other configurations.
 
 ## Installation
 

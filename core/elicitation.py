@@ -1,9 +1,8 @@
 import json
-from openai import OpenAI
 from pydantic import BaseModel
-import prompts
-import modeling
-from utils import parse, create, systemp, userp, assistantp
+import core.prompts as prompts
+import core.modeling as modeling
+from core.utils import parse, create, systemp
 
 def elicitation(purpose: str, model: modeling.Model) -> str:
     prompt = prompts.elicitation(purpose, str(model))

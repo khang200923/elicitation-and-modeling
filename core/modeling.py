@@ -2,8 +2,8 @@ from dataclasses import dataclass
 import json
 from typing import Union
 from pydantic import BaseModel
-from utils import parse, create, systemp, userp, assistantp
-import prompts
+from core.utils import parse, create, systemp
+import core.prompts as prompts
 
 @dataclass
 class Model:
